@@ -1,6 +1,5 @@
 # redirect standardnotes subdomain to port 3000
 server {
-    listen 80;
     include includes/ssl_cloudflare;
     include includes/ssl;
     server_name standardnotes.christopherpfister.de;

@@ -1,6 +1,5 @@
 # redirect seafile subdomain to port 1080
 server {
-    listen 80;
     include includes/ssl_cloudflare;
     include includes/ssl;
     server_name  seafile.christopherpfister.de;
