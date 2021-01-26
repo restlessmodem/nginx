@@ -1,7 +1,5 @@
 ssi on;
-add_header Link: "<https://christopherpfister.de>; rel=\"canonical\"";
-add_header Link: "<https://christopherpfister.de/de.html>; rel=\"alternate\"; hreflang=\"de\", <https://christopherpfister.de/en.html>; rel=\"alternate\"; hreflang=\"en\"";
-
+add_header Link "<https://christopherpfister.de>; rel=\"canonical\"";
 if ($http_accept_language) {
     rewrite index.html /$lang.html break;
 } 
