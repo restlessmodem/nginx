@@ -9,7 +9,7 @@ server {
         include includes/proxy_config;
     }
 
-    location /bot1177779297:AAEfBQ55EzAGbIofiD5VeVtXNlT6D8zv-Xs {
+    location /bot1581089764:AAG9RhRH_c9GpmlZlZlTiykxpPu55krt0JA {
         proxy_pass http://localhost:8000;
         include includes/proxy_config;
     }

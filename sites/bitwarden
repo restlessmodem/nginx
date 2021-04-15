@@ -1,6 +1,6 @@
 # redirect bitwarden subdomain to port 9443
 server {
-    include includes/ssl_letsencrypt;
+    include includes/ssl_letsencrypt_bitwarden;
     include includes/ssl;
     server_name  bitwarden.christopherpfister.de;
 

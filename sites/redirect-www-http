@@ -1,7 +1,7 @@
 # redirect www & http
 # www redirect
 server {
-    listen 80 http2;
+    listen 80;
     include includes/ssl_cloudflare;
     include includes/ssl;
 
@@ -10,7 +10,7 @@ server {
 }
 
 server {
-    listen 80 http2;
+    listen 80;
     include includes/ssl;
 
     server_name  www.restlessmodem.dev;
@@ -19,13 +19,13 @@ server {
 
 # http redirect
 server {
-    listen 80 http2;
+    listen 80;
     server_name christopherpfister.de;
     return 301 https://$server_name$request_uri;
 }
 
 server {
-    listen 80 http2;
+    listen 80;
     server_name restlessmodem.dev;
     return 301 https://$server_name$request_uri;
 }
