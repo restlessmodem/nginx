@@ -1,2 +1,5 @@
 ssl_certificate     /etc/ssl/cloudflare/christopherpfisterde_cloudflare_origin_cert.pem;
 ssl_certificate_key /etc/ssl/cloudflare/christopherpfisterde_cloudflare_origin_privkey_rsa.key;
+
+ssl_client_certificate /etc/ssl/cloudflare/cloudflare.crt;
+ssl_verify_client on;

@@ -1,2 +1,0 @@
-ssl_certificate     /home/restlessmodem/bitwarden/bwdata/letsencrypt/live/bitwarden.christopherpfister.de/fullchain.pem;
-ssl_certificate_key /home/restlessmodem/bitwarden/bwdata/letsencrypt/live/bitwarden.christopherpfister.de/privkey.pem;

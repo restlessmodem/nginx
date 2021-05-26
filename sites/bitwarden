@@ -1,11 +1,11 @@
-# redirect bitwarden subdomain to port 9443
+# redirect bitwarden subdomain to port 9000
 server {
-    include includes/ssl_letsencrypt_bitwarden;
+    include includes/ssl_cloudflare;
     include includes/ssl;
     server_name  bitwarden.christopherpfister.de;
 
     location / {
-        proxy_pass https://localhost:9443;
+        proxy_pass http://localhost:9000;
         include includes/proxy_config;
     }
 }
